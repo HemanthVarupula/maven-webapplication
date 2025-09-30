@@ -3,7 +3,7 @@ node {
 
     stage('git checkout')
     {
-      git branch: 'dev', url: 'https://github.com/HemanthVarupula/maven-webapplication-project.git'
+      git branch: 'dev', url: 'https://github.com/HemanthVarupula/maven-webapplication.git'
     }
     stage('Build') {
     sh "${mavenHome}/bin/mvn clean package"
