@@ -19,8 +19,8 @@ stage('Deploy to Tomcat') {
 
     sh """
         curl -u hemanth:password \
-        --upload-file /var/lib/jenkins/workspace/First_Pipeline/target/maven-web-application.war \
-        "http://54.160.216.145:8080/manager/text/deploy?path=/maven-web-application&update=true"
+        --upload-file /var/lib/jenkins/workspace/Hemanth/target/maven-web-application.war \
+        "http://54.243.25.7:8080/manager/text/deploy?path=/maven-web-application&update=true"
     """
 }
 
