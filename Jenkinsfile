@@ -19,7 +19,7 @@ stage('Deploy to Tomcat') {
 
     sh """
         curl -u hemanth:password \
-        --upload-file /var/lib/jenkins/workspace/First_MBPL/target/maven-web-application.war \
+        --upload-file /var/lib/jenkins/workspace/First_MBPL_dev/target/ maven-web-application.war \
         "http://54.243.25.7:8080/manager/text/deploy?path=/maven-web-application&update=true"
     """
 }
