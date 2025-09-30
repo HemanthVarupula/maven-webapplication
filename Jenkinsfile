@@ -3,7 +3,7 @@ node {
 
     stage('git checkout')
     {
-      git credentialsId: 'a66323ae-653b-4c08-9edf-17d38b2b27e7', url: 'https://github.com/HemanthVarupula/maven-webapplication-project-kkfunda.git'
+      git  url: 'https://github.com/HemanthVarupula/maven-webapplication-project-kkfunda.git'
     }
     stage('Build') {
     sh "${mavenHome}/bin/mvn clean package"
